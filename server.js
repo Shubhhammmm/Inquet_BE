@@ -9,7 +9,7 @@ const Match = require("./Model/Match");
 const app = express();
 
 const corsOptions = {
-  origin: "https://incquet.netlify.app",
+  origin: "https://inquet-fe.vercel.app",
   methods: ["GET", "POST"],
   credentials: true,
 };
@@ -31,7 +31,7 @@ const server = http.createServer(app);
 
 const io = new Server(server, {
   cors: {
-    origin: "https://incquet.netlify.app",
+    origin: "https://inquet-fe.vercel.app",
     methods: ["GET", "POST"],
     credentials: true,
   },
